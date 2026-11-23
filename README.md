@@ -1,7 +1,13 @@
-# AVIS: Adaptive Test-Time Scaling for Vision–Language Models
+# AVIS: Adaptive Test-Time Scaling for Vision–Language Models (NeurIPS 2026)
 
+[![NeurIPS](https://img.shields.io/badge/NeurIPS-2026-4b44ce.svg)](https://neurips.cc/)
 [![arXiv](https://img.shields.io/badge/arXiv-2606.11576-b31b1b.svg)](https://arxiv.org/abs/2606.11576)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://avis-vlm.github.io/)
+
+## 📰 News
+- 🎉 **AVIS** has been accepted to **NeurIPS 2026**!
+- 📄 Paper and code released on [arXiv](https://arxiv.org/abs/2606.11576).
+
 
 > **AVIS** is a lightweight, training-free-friendly policy for **test-time compute allocation** in Vision–Language Models. It treats inference cost as two coupled axes — how much you *see* and how much you *think* — and adapts both **per query**: it prunes redundant visual tokens with **Key Diversity Visual (KDV)** pruning before prefill, then spends the saved compute on **adaptive self-consistency**, allocating more reasoning rollouts only to the inputs that actually benefit.
 
@@ -182,16 +188,16 @@ The core AVIS logic in the modeling file: KDV key-diversity scoring is captured 
 
 ## Citation
 
+If you find AVIS useful in your research, please cite our paper:
+
 ```bibtex
-@misc{jeddi2026avis,
-      title={AVIS: Adaptive Test-Time Scaling for Vision-Language Models},
-      author={Ahmadreza Jeddi and Minh N. Le and Amirhossein Kazerouni and Hakki Karaimer and Hue Nguyen and Iqbal Mohomed and Michael Brudno and Konstantinos G. Derpanis and Alex Levinshtein and Babak Taati and Radek Grzeszczuk},
+    @inproceedings{jeddi2026avis,
+      title={AVIS: Adaptive Test-Time Scaling for Vision--Language Models},
+      author={Jeddi, Ahmadreza and Le, Minh N. and Kazerouni, Amirhossein and Karaimer, Hakki and Nguyen, Hue and Mohomed, Iqbal and Brudno, Michael and Derpanis, Konstantinos G. and Levinshtein, Alex and Taati, Babak and Grzeszczuk, Radek},
+      booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
       year={2026},
-      eprint={2606.11576},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2606.11576},
-}
+      url={https://arxiv.org/abs/2606.11576}
+    }
 ```
 
 ## Acknowledgements
